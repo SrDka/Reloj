@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<script>
+			function hora(){
+				var h = new Date();
+				document.getElementById("hour").innerHTML = h;
+				setInterval(hora, 1000);
+				
+			}
+		</script>
+		<script src="p5.js"></script>
+		<script>
+		function setup() {
+		  createCanvas(1300, 400);
+		  frameRate(60);
+		}
+
+		function draw() {
+		  background(220);
+		  noStroke();
+		  ellipse(mouseX,mouseY,mouseX,mouseY);
+		  fill(mouseX,mouseY,0);
+		 }
+		</script>
+		<!--<script src="p5.sound.js"></script>
+		<!--<script src="sketch.js"></script>
+		<!--<script>
+		function setup() {
+  createCanvas(400, 400);
+  background(220);
+}
+
+function draw() {
+  
+  ellipse(mouseX,mouseY,50);
+  fill(255,0,0);
+  
+}
+		</script>-->
+		
+		<style>
+		    h1{
+			background-color:green;
+			text-align:center:
+			border:solid yellow;
+			color:yellow;
+			}
+			div{
+			background-color:blue;
+			color:yellow;
+			border: solid yellow;
+			text-align:center;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1 id="colorines"> Mi reloj molon </h1>
+		<div>
+			<p>Mi reloj que mola mogollon </p>
+			<button id="hour" onclick= "hora()">Hora</button>
+		</div>
+
+
+		
+	</body>
+</html>
